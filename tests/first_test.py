@@ -20,3 +20,6 @@ class TestCalc:
     def test_adding(self):
         print('\nПроверка сложения')
         assert self.calc.adding(self, 6, 3) == 9
+    def test_adding_filed(self):
+        print('\nНегативный тест на сложение')
+        assert self.calc.adding(self, 6, 3) != 10
